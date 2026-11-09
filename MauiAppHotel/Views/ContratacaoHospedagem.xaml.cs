@@ -7,8 +7,8 @@ public partial class ContratacaoHospedagem : ContentPage
     App PropriedadesApp;
 
     public ContratacaoHospedagem()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
 
         PropriedadesApp = (App)Application.Current;
 
@@ -54,5 +54,11 @@ public partial class ContratacaoHospedagem : ContentPage
 
         dtpck_checkout.MinimumDate = data_selecionada_checkin.AddDays(1);
         dtpck_checkout.MaximumDate = data_selecionada_checkin.AddMonths(6);
+    }
+
+    // MÉTODO MODIFICADO PARA NAVEGAR USANDO A PILHA DE NAVEGAÇÃO PADRÃO
+    private async void OnSobreClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Sobre());
     }
 }

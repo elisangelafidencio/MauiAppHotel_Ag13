@@ -87,7 +87,15 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar" Clicked="Button_Clicked"   />
+                <Button Text="Avançar" Clicked="Button_Clicked" />
+
+                <!-- BOTÃO SOBRE ADICIONADO AQUI -->
+                <Button Text="Sobre"
+                        Clicked="OnSobreClicked"
+                        BackgroundColor="Transparent"
+                        TextColor="{StaticResource Primary}"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center" />
 
             </VerticalStackLayout>
         </Frame>
